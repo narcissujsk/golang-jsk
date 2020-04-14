@@ -4,6 +4,7 @@ import (
 	"github.com/kardianos/service"
 	"log"
 	"os"
+	"time"
 )
 
 var logging service.Logger
@@ -22,13 +23,17 @@ func (p *program) Stop(s service.Service) error {
 }
 func (p *program) run() {
 	// 这里放置程序要执行的代码……
-	logging.Info("run my ccc")
+	for {
+		time.Sleep(3 * time.Second)
+		logging.Info("run my ccc")
+	}
+
 }
 
 func main() {
 	//服务的配置信息
 	cfg := &service.Config{
-		Name:        "simple_test",
+		Name:        "simple",
 		DisplayName: "a simple_test service",
 		Description: "This is an simple_test Go service.",
 	}
