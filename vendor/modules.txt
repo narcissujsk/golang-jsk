@@ -5,6 +5,9 @@ github.com/StackExchange/wmi
 ## explicit
 github.com/go-ole/go-ole
 github.com/go-ole/go-ole/oleutil
+# github.com/kardianos/service v1.0.0
+## explicit
+github.com/kardianos/service
 # github.com/shirou/gopsutil v2.20.3+incompatible
 ## explicit
 github.com/shirou/gopsutil/cpu
@@ -17,3 +20,7 @@ github.com/shirou/gopsutil/mem
 ## explicit
 golang.org/x/sys/unix
 golang.org/x/sys/windows
+golang.org/x/sys/windows/registry
+golang.org/x/sys/windows/svc
+golang.org/x/sys/windows/svc/eventlog
+golang.org/x/sys/windows/svc/mgr
