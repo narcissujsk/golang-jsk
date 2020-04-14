@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"testing"
 )
 
 //map转json
@@ -17,7 +18,7 @@ func mapToJSON(tempMap *map[string]interface{}) string {
 	return string(data)
 }
 
-func mainJsonTest2() {
+func Testjson(t *testing.T) {
 
 	tempMap := make(map[string]interface{})
 

@@ -9,10 +9,8 @@ import (
 )
 
 func getCpuInfo() {
-	cpuInfos, err := cpu.Info()
-	if err != nil {
-		fmt.Printf("get cpu info failed, err:", err)
-	}
+	cpuInfos, _ := cpu.Info()
+
 	for _, ci := range cpuInfos {
 		fmt.Println(ci)
 	}

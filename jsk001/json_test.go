@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"testing"
 )
 
 //用户
@@ -38,7 +39,7 @@ func structToJSON() {
 	fmt.Printf("%s\n", string(data))
 }
 
-func main0000() {
+func TestJsk(t *testing.T) {
 
 	structToJSON()
 
