@@ -1,4 +1,4 @@
-package main
+package jsk001
 
 type book struct {
 	id   string

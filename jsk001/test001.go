@@ -1,4 +1,4 @@
-package main
+package jsk001
 
 import "fmt"
 
